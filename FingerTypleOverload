@@ -20,12 +20,19 @@ class Weird {
         Weird(int n) {
             number = n;
         }
-
+        
+        
+        // overload = operator
         void operator=(const Weird & obj){
 
             number = obj.number;
             cout << number;
 
+        }
+        
+        // overload + to *
+        void operator+(const Weird & obj){
+            number *= obj.number;
         }
 
 };
@@ -37,6 +44,10 @@ int main() {
     test1 = test2;
     cout << endl;
     test2 = test1;
+    
+    // test overload 2
+    test1 + test2;
+    cout << "Value of test 1 number after overloaded is: " << test1.getNum() << endl;
 
 }
 
