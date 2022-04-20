@@ -1,6 +1,10 @@
 /*
 Test overload =
 Overload = to display value
+NOTE:
+We can not change number of operand for operation
+= is alway binaray 
+++ and -- is alway unary operators
 */
 
 #include <iostream>
